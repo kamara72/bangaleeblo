@@ -1,0 +1,102 @@
+{% extends 'mysite/base_layout.html' %}
+{% load static %}
+
+{% block content %}
+	
+	<div class="jumbotron pb-2 pt-3">
+		<h2 class="text-primary">About Me</h2>
+		<p class="lead">Programmer / Software developer / CISCO Network Associate /  System Administtrator</p>
+	</div>
+	
+	<div class="container">
+		
+		<div class="row">
+		  <div class="col-sm-8">
+			<h2>Hi</h2>
+			<p>
+				My full name is Bangalee Kamara Jr and I built this personal blog for people who want me help them
+				imrpove their coding skils. I have helped a lot of people improve their coding skills already. Some
+				at professional level, and others just entering the coding world. 
+			</p>
+			<p>
+				Computer programming is not a difficult thing to do, however; many do see it as a taboo, but it
+				doesn't have to be hard. It take a long time to learn though, that's why I'm here to help you. 
+				I am a great coder in many dynamaic languages from C++ to C#, Python, PHP, and database scripts 
+				like, SQL, MongoDB, SQLIte3 amongst others.
+			</p>
+			<h2 class="h4 text-primary text-center">Contact me to learn how to code!</h2>
+			<p>
+				Contact me now, let's learn how to code together at the pace of your ability. Each training will
+				cover a project upon completion. If you get stuck on the way of the training, maybe you didn't
+				understand something, or just need a little help, I will always be there to help put you back on
+				track.
+			</p>
+			<h2 class="h4 text-primary text-center">Who am I?</h2>
+			<p>
+				<b><em>Hmmmmmm,</em></b> a big question to answer, isn't it? Well I'm a Senior level computer
+				programmer with Bachelor degree in Information Technology (IT) with concerntration in System
+				Administration. I graduated from Starz University in 2019, and have gone on to do many projects
+				for professionals, from resume to websites, porofolios and other apps, be it desktop or web.
+			</p>
+			<p>
+				I have been in computer programming for over five years now, and developing softwares for jobs,
+				businesses and personal resume. I am both back-end and front-end developer with concerntration
+				mainly in languages like the ones mentioned above.
+			</p>
+		  </div>
+		  <div class="col-sm-4">
+			<div class="card" style="width: 18rem;">
+				<img src="{% static 'mysite/author.jpg' %}" class="card-img-top" alt="...">
+				<div class="card-body">
+				  <p class="card-text">
+					  <b class="text-primary">Bangalee Kamara Jr</b>
+					  <em>Auhtor and editor of this site</em>
+				  </p>
+				</div>
+			  </div>
+		  </div>
+		</div>
+		<div class="row">
+		  <div class="col-sm">
+			<div class="card text-white bg-primary mb-3" style="max-width: 18rem;">
+				<div class="card-header">Social Contacts</div>
+				<div class="card-body">
+				  <h5 class="card-title">Mail me</h5>
+				  <p class="card-text">
+					  <ul>
+						  <li>Email: kamarabangalie@gmail.com</li>
+					  </ul>
+				  </p>
+				</div>
+			  </div>
+		  </div>
+		  <div class="col-sm">
+			<div class="card text-white bg-primary mb-3" style="max-width: 18rem;">
+				<div class="card-header">Contact</div>
+				<div class="card-body">
+				  <h5 class="card-title">Get in touch</h5>
+				  <p class="card-text">
+					  <ul>
+						  <li>Phone-1: 0776559102</li>
+						  <li>Phone-2: 0886743026</li>
+					  </ul>
+				  </p>
+				</div>
+			  </div>
+		  </div>
+		  <div class="col-sm">
+			<div class="card text-white bg-primary mb-3" style="max-width: 18rem;">
+				<div class="card-header">Author's quote</div>
+				<div class="card-body">
+				  <h5 class="card-title">Wise words</h5>
+				  <p class="card-text">
+					  <em>"The ink of a scholar is holier than the blood of a martyr"</em>
+				  </p>
+				  <p></p>
+				</div>
+			  </div>
+		  </div>
+		</div>
+		
+	  </div>
+{% endblock %}

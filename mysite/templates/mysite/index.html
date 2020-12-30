@@ -1,0 +1,31 @@
+{% extends 'mysite/base_layout.html' %}
+{% load static %}
+
+{% block content %}
+
+	<div class="row pt-5">
+		<div class="col-md-8">
+			{% for contact in contacts %}
+				<section class="p-3" style="border-bottom: 2px solid blue;">
+					<h3 class="text-primary">{{ contact.name }}</h3>
+					<p>Posted by: <b class="text-primary">{{ contact.email }}</b></p>
+					<p>{{ contact.message }}</p>
+					<p><b>{{ contact.date }}</b></p>
+				</section>
+			{% endfor %}
+		</div>
+		<div class="col-md-4">
+			<div class="card" style="width: 18rem;">
+				<img src="{% static 'mysite/profile.jpg' %}" class="card-img-top" alt="...">
+				<div class="card-body">
+				  <p class="card-text">
+					  <b class="text-primary">Bangalee Kamara Jr</b>
+					  Senior level computer programmer with Bachelor degree in Information Technology (IT) with 
+					  concerntration in System Administration.
+				  </p>
+				</div>
+			  </div>
+		</div>
+	</div>
+
+{% endblock %}

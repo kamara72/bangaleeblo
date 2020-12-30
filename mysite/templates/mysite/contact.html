@@ -1,0 +1,48 @@
+{% extends 'mysite/base_layout.html' %}
+
+{% load static %}
+
+{% block content %}
+	
+
+
+	<div class="container">
+		<div class="row">
+		  <div class="col-md-8">
+			  <div class="jumbotron pb-2 pt-3">
+				  <h2 class="text-primary">Contact Me</h2>
+				  <p class="lead">
+					  For more about your future in computer programming, contact me.
+				  </p>
+			  </div>
+			<form action="{% url 'contact' %}" method="POST">
+				{% csrf_token %}
+				<div class="form-group">
+				<label for="formGroupExampleInput">Full Name</label>
+				<input type="text" class="form-control" id="formGroupExampleInput" name="fname" required>
+				</div>
+				<div class="form-group">
+				<label for="formGroupExampleInput2">E-mail</label>
+				<input type="text" class="form-control" id="formGroupExampleInput2" name="mail" required>
+				</div>
+				<div class="form-group">
+					<label for="exampleFormControlTextarea1">Message</label>
+					<textarea class="form-control" id="exampleFormControlTextarea1" name="message" rows="3" required></textarea>
+				</div>
+				<button type="submit" class="btn btn-primary mb-2">Send Message</button>
+			</form>
+		  </div>
+		  <div class="col-6 col-md-4">
+			<div class="card pt-3" style="width: 18rem;">
+				<img src="{% static 'mysite/author.jpg' %}" class="card-img-top" alt="...">
+				<div class="card-body">
+				  <p class="card-text text-primary">
+					  <b>Bangalee Kamara Jr</b>
+				  </p>
+				</div>
+			  </div>
+		  </div>
+		</div>
+	</div>
+
+{% endblock %}
